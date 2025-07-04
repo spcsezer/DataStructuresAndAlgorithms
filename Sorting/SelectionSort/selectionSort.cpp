@@ -1,6 +1,6 @@
 #include <iostream>
 
-int* insertionSort(int array[], int arrayLength)
+int* selectionSort(int array[], int arrayLength)
 {
     for(int step = 0; step < arrayLength - 1; step++)
     {
@@ -25,7 +25,7 @@ int main()
     int exArray[] = {20, 12, 10, 15, 2};
     int arrayLength = sizeof(exArray) / sizeof(exArray[0]);
 
-    insertionSort(exArray, arrayLength);
+    selectionSort(exArray, arrayLength);
 
     for(int elements : exArray)
     {
